@@ -1,0 +1,42 @@
+Follow the instructions below to install the game:
+1. create a database named id_db using your phpMyadmin interface.
+2. Unzip the game folder into you www folder in your wamp server
+3. import the database located in your game folder: game/db/id_db.sql
+4. Open the config.php file and change the db_username and password to your username and password you use in your wamp server user db
+5. Type localhost/game/
+
+
+LANGUAGES USED IN DEVELOPING THE GAME:
+1. User Interface: HTML5, and CSS3
+2. Game Egine: Javascript
+3. Server: PHP and MYSQL
+
+1. User Interface: the languages used in createing the user interface are HTML and CSS. these where choosen because they where to use and understand, and they are currently the de facto standard in creating user interfaces both for desktop and web applications.
+
+2. Game Engine: The language used in developing the game is Javascript, reason being that it fits well with HTML5/CSS3 paradigm. Knowing fully well that the game will run on the user's browser made javascript a perfect choice for this project.
+
+3. Server: At some point, there was need to store user's high score some where... there are so many ways of doing this:
+  browser cookies, sessions, and local storage. but using any these restricts the high scores to only the user's browser thus, i needed a way to store the high scores so that it will be accessible to everyone playing the game on the internet... and hence, the PHP/MYSQL.
+ These where choosen because they where easy to set up etc.
+
+ DATABASE TABLES AND FIELDS
+  The tables in the database are just two:
+  1. USER table: for storing user information
+  2. GAME table: for storing game data such as high Scores
+  the fields in the tables are:
+
+  USER table fields:
+  id (integer): stores user id
+  username (varchar): stores user name
+  password (varchar): stores the user password
+
+  GAME table fields:
+  id (integer): stores the game id
+  username (varchar): stores the username of the user that played the game
+  score (integer): stores the score for this game
+  time (timestamp): stores the time/date the user played the game.
+
+ SOFTWARE REQUIREMENTS NEEDED TO RUN THE Game
+The only requirements the user needs to run the game are:
+ 1. Web browser (This is the only requirement if the game is hosted online)
+ 2. if you have a copy of the game locally, then WAMP server (windows), or LAMP server (linux) or XAMPP(cross platfor) will be required to run the game locally.
